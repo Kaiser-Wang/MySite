@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Kai Wang's Personal Website</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<a href="index.html" class="logo">Portfolio</a>
+		</header>
+
+		<!-- Nav -->
+		<nav id="nav">
+			<ul class="links">
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="DroidChallenge.html">Project 1</a></li>
+				<li class="active"><a href="QuadRacer.html">Project 2</a></li>
+			</ul>
+			<ul class="icons">
+				<li><a href="https://www.linkedin.com/in/kai-wang-7806044268/" class="icon brands fa-linkedin"><span
+							class="label">LinkedIn</span></a></li>
+				<li><a href="https://github.com/Kaiser-Wang" class="icon brands fa-github"><span
+							class="label">GitHub</span></a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Post -->
+			<section class="post">
+				<header class="major">
+					<h1>Indoor Quad Racer</h1>
+					<p>This project was undertaken by a design team of three students. The objective of the project was
+						to design and build a quadcopter with an onboard camera that is able to fly safely in an indoor
+						environment and is controlled by a radio controller. The quadcopter should be able to fly along
+						the prescribed path and should be able to capture images of the targets and relay these images
+						back to the observer. The quadcopter should meet all the design requirements and follow the
+						design for manufacturing principles.</p>
+				</header>
+				<div class="image main">
+					<img src="images/QuadRacer/Drone1.jpg" alt=""
+						style="display:inline-block; width: 100%; height: 100%" />
+
+				</div>
+				<h2>Description of Project</h2>
+				<p style="margin-bottom:0px;">In this project, our team accomplished the following tasks:
+					<li>Translated the customer requirements in the design specifications and function structures, and
+						made a Gantt chart for the project.</li>
+					<li>Proposed and analyzed three conceptual designs and made an evaluation matrix to select the final
+						design.</li>
+					<img src="images/QuadRacer/DecisionMatrix.png" alt=""
+						style="text-align:center; margin-top:10px; margin-bottom:0px; display:inline-block; width: 100%; height: 100%">
+					<li>Generated a 3D model of the final design in SolidWorks and ran simulations for static analysis
+						of stress, displacement and strain.</li>
+					<img src="images/QuadRacer/Model.jpg" alt=""
+						style="margin-top:10px; margin-bottom:0px; display:inline-block; width: 100%; height: 100%">
+					<img src="images/QuadRacer/Stress.png" alt=""
+						style="margin-top:10px; margin-bottom:0px; display:inline-block; width: 33%; height: 33%">
+					<img src="images/QuadRacer/Displacement.png" alt=""
+						style="margin-top:10px; margin-bottom:0px; display:inline-block; width: 33%; height: 33%">
+					<img src="images/QuadRacer/Strain.png" alt=""
+						style="margin-top:10px; margin-bottom:0px; display:inline-block; width: 33%; height: 33%">
+					<li>Made drawings of parts and assemblies of the quadcopter with GD&T and created BOM.</li>
+					<li>Manufactured the main body and landing gear with carbon fiber by water-jet cut.</li>
+					<li>Manufactured the camera mount and propeller guards by 3D printing.</li>
+					<li>Ran thrust analysis to ensure that the propellers can provide enough thrust for lifting and
+						hovering.</li>
+					<li>Soldered and connected electrical components such as battery, PDB, UBEC, ESC, CC3D, Receiver,
+						Motors, Camera, LEDs, etc.</li>
+					<img src="images/QuadRacer/ElectricalConnection.PNG" alt=""
+						style="margin-top:10px; margin-bottom:0px; display:inline-block; width: 49%; height: 49%">
+					<img src="images/QuadRacer/ElectricalConnection2.png" alt=""
+						style="margin-top:10px; margin-bottom:0px; display:inline-block; width: 49%; height: 49%">
+					<li>Setup the quadcopter CC3D flight controller with OpenPilot GCS Software and connected the
+						receiver with transmitter.</li>
+					<li>Tested electric power subsystem, control subsystem, vision subsystem and structural subsystem.
+					</li>
+					<li>Evaluated design for assembly and disassembly, and design for maintenance and modularity.</li>
+				</p>
+				<div class="image main">
+					<img src="images/QuadRacer/Test1.jpg" alt=""
+						style="display:inline-block; width: 49%; height: 49%" />
+					<img src="images/QuadRacer/Test2.jpg" alt=""
+						style="display:inline-block; width: 49%; height: 49%" />
+				</div>
+				<h2>Result</h2>
+				<p style="text-align:center;"><img src="images/QuadRacer/Test3.gif" alt=""
+						style="margin-top:10px; margin-bottom:0px; display:inline-block; width: 50%; height: 50%"></p>
+				<p>On the test day, the quadcopter was able to fly along the prescribed path and land safely. The image
+					or filming relayed from the camera was clear. However, the quadcopter drifted backwards due to the
+					location of center of gravity. Besides, the remote control was too sensitive because the motor
+					thrust was calibrated at a high intial value. The pilot might also need more practice. Overall, the
+					quadcopter performed well and met customer requirements and expectations.</p>
+
+				<h2>Exploration</h2>
+				<p>Mathematical model of quadcopter and PID and LQR control.</p>
+			</section>
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<!-- <section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section> -->
+			<section class="split contact">
+				<section class="alt">
+					<h3>Email</h3>
+					<p><a href="mailto:wesker_wang@outlook.com">wesker_wang@outlook.com</a></p>
+				</section>
+				<section>
+					<h3>Social</h3>
+					<ul class="icons alt">
+						<li><a href="https://www.linkedin.com/in/kai-wang-7806044268/"
+								class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/Kaiser-Wang" class="icon brands alt fa-github"><span
+									class="label">GitHub</span></a></li>
+					</ul>
+				</section>
+			</section>
+		</footer>
+
+		<!-- Copyright -->
+		<div id="copyright">
+			<ul>
+				<!-- <li>&copy; Untitled</li>
+				<li>Design: <a href="https://html5up.net">HTML5 UP</a></li> -->
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
