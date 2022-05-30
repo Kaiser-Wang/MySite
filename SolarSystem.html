@@ -1,0 +1,258 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Kai Wang's Personal Website</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<a href="index.html" class="logo">Portfolio</a>
+		</header>
+
+		<!-- Nav -->
+		<nav id="nav">
+			<ul class="links">
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="DroidChallenge.html">Project 1</a></li>
+				<li><a href="QuadRacer.html">Project 2</a></li>
+				<li><a href="LiftingSystem.html">Project 3</a></li>
+				<li><a href="PondAerator.html">Project 4</a></li>
+				<li><a href="RoboMaster.html">Project 5</a></li>
+				<li class="active"><a href="SolarSystem.html">Project 6</a></li>
+			</ul>
+			<ul class="icons">
+				<li><a href="https://www.linkedin.com/in/kai-wang-7806044268/" class="icon brands fa-linkedin"><span
+							class="label">LinkedIn</span></a></li>
+				<li><a href="https://github.com/Kaiser-Wang" class="icon brands fa-github"><span
+							class="label">GitHub</span></a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Post -->
+			<section class="post">
+				<header class="major">
+					<h1>Integrated Solar Thermal System</h1>
+					<p>This was my capstone project and first job at UBC. The integrated solar thermal system (ISTS) is
+						composed of solar thermal hydronic system and solar frame actuation system. The solar thermal
+						hydronic system harnesses solar energy to generate thermal energy. It consists of a solar
+						collector loop for water heating, a heat pump loop for auxiliary heating and a chiller
+						loop for water cooling / load simulation. The solar frame actuation system changes the
+						orientation of the solar thermal collectors to maximize the capture of solar energy. It consists
+						of rotatable solar frames, an azimuthal actuation system for yaw rotation and an altitudinal
+						actuation system for pitch rotation. The objective of the project is to complete the
+						instrumentation and control of the integrated solar thermal system. The solar thermal hydronic
+						system includes sensors such as fluid temperature sensors, ambient temperature sensors, flow
+						meters and a solar radiation sensor, and actuators such as a heat pump, water pumps, a chiller,
+						and three-way valves, and a microcontroller such as Arduino. The solar frame actuation system
+						includes sensor such as IMU, actuators such as a DC motor and a linear actuator, and a
+						microcontroller such as Arduino.</p>
+				</header>
+				<div class="image main">
+					<p style="text-align:center; margin-bottom:0px;"><img src="images/SolarSystem/Schematic.png" alt=""
+							style="margin-top:0px; margin-bottom:50px; display:inline-block; width: 80%; height: 80%">
+					</p>
+					<p style="text-align:center; margin-bottom:0px;"><img src="images/SolarSystem/solarframe.jpg" alt=""
+							style="margin-top:0px; margin-bottom:0px; display:inline-block; width: 80%; height: 80%">
+					</p>
+				</div>
+				<h2>Description of Project for Solar Thermal Hydronic System</h2>
+				<p style="margin-bottom:0px;">In this project, I accomplished the following tasks:
+					<li>Managed the project with a task list, a Gantt chart, weekly reports, and documentations.</li>
+					<li>Measured the fluid temperature sensor RTD PT1000 using Wheatstone bridge circuit and
+						instrumentation amplifier circuit.</li>
+				<p style="text-align:center; margin-bottom:0px;"><img src="images/SolarSystem/tempcircuit.png" alt=""
+						style="margin-top:10px; margin-bottom:0px; display:inline-block; width: 60%; height: 60%"></p>
+				<li>Measured the fluid temperature sensor RTD PT1000 using temperature sensor module Adafruit MAX31865
+					RTD amplifier and SPI communication protocol. Multiple temperature sensor modules (multiple
+					independent slaves) were connected to one Arduino microcontroller (one master) through SPI
+					communication protocol, where the SDI, SDO and SCK pins are shared and each slave is assigned a
+					unique CS pin.</li>
+				<p style="text-align:center; margin-bottom:0px;">
+					<img src="images/SolarSystem/max31865.jpg" alt=""
+						style="margin-top:10px; margin-bottom:0px; display:inline-block; width: 20%; height: 20%">
+					<img src="images/SolarSystem/spi.jpg" alt=""
+						style="margin-top:10px; margin-bottom:0px; display:inline-block; width: 45%; height: 45%">
+				</p>
+				<li>Compared the two different fluid temperature sensing methods (Wheatstone bridge and Temperature
+					sensor module) with a T-type thermometer by measuring the water temperature at different kettle
+					setpoints. After comparing the absolute error and mean absolute error, the temperature sensor module
+					turned to be more accurate.</li>
+				<li>Measured ambient temperature and humidity using a wired version of DHT22 sensor. It outputs a
+					digital signal on the data pin which can be read by Arduino.</li>
+				<li>Measured flow rate from flow meter and validated the measurement by calculating pump head and
+					finding flow rate from pump curve.</li>
+				<li>Measured solar radiation sensor with an instrumentation amplifier circuit.</li>
+				<li>Designed a printed circuit board (PCB) for sensor powering and signal processing using Altium
+					Designer. All the sensors (14 fluid temperature sensors with SPI communication, 2 ambient
+					temperature sensors, 3 flowmeters and 1 solar radiation sensor) were connected to the signal
+					processing board through terminal blocks and the processed data were sent to Arduino through female
+					pin headers. A microSD module was also soldered to the PCB for data logging backup.</li>
+				<p style="text-align:center; margin-bottom:0px;"><img src="images/SolarSystem/pcb.png" alt=""
+						style="margin-top:10px; margin-bottom:0px; display:inline-block; width: 60%; height: 60%"></p>
+				<li>Designed power circuit for actuators such as water pumps, three-way valves, and a chiller. An
+					Arduino microcontroller and a relay module were used to turn actuators on/off.</li>
+				<li>Designed electrical control panel layout and harnessed wires and cables.</li>
+				<p style="text-align:center; margin-bottom:0px;"><img src="images/SolarSystem/electricalpanel.JPG"
+						alt=""
+						style="margin-top:10px; margin-bottom:0px; display:inline-block; width: 70%; height: 70%"></p>
+				<li>Developed a graphical user interface (GUI) using MATLAB App Designer.
+					The GUI consists of Connection Panel, Performance Panel, Control Panel and Schematic Panel. The
+					Connection Panel establishes the connection between Microcontroller and GUI. The Performance Panel
+					calculates system performance and efficiency. The Control Panel allows user to switch the control
+					mode and send control signals to actuators. The Schematic Panel displays all the information about
+					the system including sensor data and actuator state.</li>
+				<p style="text-align:center; margin-bottom:0px;"><img src="images/SolarSystem/gui.png" alt=""
+						style="margin-top:10px; margin-bottom:0px; display:inline-block; width: 100%; height: 100%"></p>
+				<li>Developed two way communcation between Microcontroller and GUI. Microcontroller acquires physical
+					data and transmits them to GUI. GUI transmits control signal back to Microcontroller for actuators.
+					GUI shares information with MATLAB.</li>
+				<p style="text-align:center; margin-bottom:0px;"><img src="images/SolarSystem/communication.png" alt=""
+						style="margin-top:10px; margin-bottom:0px; display:inline-block; width: 70%; height: 70%"></p>
+				<li>Developed data acquisition and logging system using MATLAB GUI and microSD card.</li>
+				<li>Developed automatic control logic and state machine in Arduino.</li>
+				<p style="text-align:center; margin-bottom:0px;"><img src="images/SolarSystem/statemachine.png" alt=""
+						style="margin-top:10px; margin-bottom:0px; display:inline-block; width: 50%; height: 50%"></p>
+				<li>Developed system architecture. The basic ON/OFF controller was implemented in Arduino. It is
+					possible to override Auto mode using manual controls in GUI. It is also possible to send command
+					signal from advanced controllers in MATLAB.</li>
+				<p style="text-align:center; margin-bottom:0px;"><img src="images/SolarSystem/architecture.png" alt=""
+						style="margin-top:10px; margin-bottom:0px; display:inline-block; width: 70%; height: 70%"></p>
+				<li>Selected and purchased a new air-to-water heat pump with a variable speed compressor considering
+					heating capacity, pipe size and power supply.</li>
+				</p>
+
+				<h2>Description of Work for Solar Frame Actuation System</h2>
+				<p style="margin-bottom:0px;">As a mechatronics engineer, I accomplished the following tasks:
+					<li>Rebuilt the CAD model for the solar frame actuation system in SolidWorks.</li>
+					<li>Designed a waterproof enclosure in SolidWorks to protect gears and motors, and prepared drawings
+						for manufacture and welding.</li>
+					<li>Used an IMU (Adafruit BNO055) to measure pitch and yaw angles of the solar frame. The IMU was
+						connected to the power pins and I2C pins on Arduino. The IMU was mounted on a 3D printed part
+						and enclosed by a waterproof electrical box. The electrical box is then installed on the solar
+						frame using a water-jetted and bent 6061 Aluminum sheet metal. The cable and gland are also
+						waterproof.</li>
+				<p style="text-align:center; margin-bottom:0px;">
+					<img src="images/SolarSystem/imu1.jpg" alt=""
+						style="margin-top:10px; margin-bottom:0px; display:inline-block; width: 30%; height: 30%">
+					<img src="images/SolarSystem/imu2.JPG" alt=""
+						style="margin-top:10px; margin-bottom:0px; display:inline-block; width: 30%; height: 30%">
+				</p>
+				<li>Programmed feedback control code in Arduino with the IMU added to the system to control yaw and
+					pitch angles of the solar frame. Implemented speed adjustment on actuators depending on the
+					difference between the angle and the setpoint.</li>
+				<li>Developed a new GUI for the solar frame actuation system using MATLAB App Designer. Connection panel
+					establishes the serial communication between Microcontroller and MATLAB. Solar Position Calculation
+					panel calculates the solar azimuth and altitude angles based on time and location. Azimuthal Motion
+					panel and Altitudinal Motion panel monitor and control the azimuthal actuation system and
+					altitudinal actuation system. Monitor panel monitors electrical current in actuators, system status,
+					and user command.</li>
+				<p style="text-align:center; margin-bottom:0px;">
+					<img src="images/SolarSystem/gui2.png" alt=""
+						style="margin-top:10px; margin-bottom:0px; display:inline-block; width: 100%; height: 100%">
+				</p>
+				<li>Built a LED circuit to simulate the solar frame actuation system and test Arduino control code and
+					MATLAB GUI with IMU. Different LED colors simulate different directions and their brightness
+					simulates speed of actuation.</li>
+				<li>Tested the updated control code and GUI on the solar frame actuation system.</li>
+				<li>Tested the DC motor and linear actuator individually. The motor driver used H-Bridge to control the
+					direction of rotation and used PWM to control the speed of DC motors. A double pole double throw
+					relay was used switch the motor to be controlled.</li>
+				<li>Wrote the procedure for installing and uninstalling the solar frame actuation system.</li>
+				</p>
+
+				<h2>Conclusion</h2>
+				<p>After the development of the instrumentation and control of the integrated solar thermal system, the
+					solar frame hydronic system was tested by running for 30 hours and the system was observed to behave
+					as expected. The test verified the sensor conditioning and signal processing board, the data
+					aquisition and logging system, and the controller and GUI. The success of the test indicated
+					that the instrumentation and control of the solar frame hydronic system were done properly and the
+					system could be used for future research and testing of advanced control. The solar frame actuation
+					system was also tested to be functional. The future development would be the automatic sun tracking
+					feature. From this project and work, I gathered lots of experience in mechatronics engineering.</p>
+			</section>
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<!-- <section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section> -->
+			<section class="split contact">
+				<section class="alt">
+					<h3>Email</h3>
+					<p><a href="mailto:wesker_wang@outlook.com">wesker_wang@outlook.com</a></p>
+				</section>
+				<section>
+					<h3>Social</h3>
+					<ul class="icons alt">
+						<li><a href="https://www.linkedin.com/in/kai-wang-7806044268/"
+								class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/Kaiser-Wang" class="icon brands alt fa-github"><span
+									class="label">GitHub</span></a></li>
+					</ul>
+				</section>
+			</section>
+		</footer>
+
+		<!-- Copyright -->
+		<div id="copyright">
+			<ul>
+				<!-- <li>&copy; Untitled</li>
+				<li>Design: <a href="https://html5up.net">HTML5 UP</a></li> -->
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
