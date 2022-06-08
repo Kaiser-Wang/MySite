@@ -80,9 +80,18 @@
 						alt=""
 						style="margin-top:10px; margin-bottom:0px; display:inline-block; width: 70%; height: 70%"></p>
 				<li>Designed a differential drive robot in SolidWorks and Fusion 360.</li>
-				<li>Simulated TurtleBot3 and the designed differential drive robot in Gazebo. Built SDF and URDF models
-					for differential drive robots and SDF models for Gazebo worlds. Used Gazebo plugins for IMU, lidar,
-					camera, differential drive controller, joint state publisher, etc.</li>
+				<li>Simulated TurtleBot3 robots and the designed differential drive robot in Gazebo. Built SDF and URDF
+					models for differential drive robots and SDF models for Gazebo worlds. Used Gazebo plugins for IMU,
+					lidar, camera, differential drive controller, joint state publisher, etc.</li>
+				<li>Tested and tuned teleoperation and SLAM in Gazebo.</li>
+				<p style="text-align:center; margin-bottom:0px;"><img src="images/DifferentialDrive/slam.gif" alt=""
+						style="margin-top:10px; margin-bottom:0px; display:inline-block; width: 100%; height: 100%"></p>
+				<li>Tested and tuned autonomous navigation in Gazebo.</li>
+				<p style="text-align:center; margin-bottom:0px;"><img src="images/DifferentialDrive/nav.gif" alt=""
+						style="margin-top:10px; margin-bottom:0px; display:inline-block; width: 100%; height: 100%"></p>
+				<li>Developed and tested auto docking in Gazebo.</li>
+				<p style="text-align:center; margin-bottom:0px;"><img src="images/DifferentialDrive/docking.gif" alt=""
+						style="margin-top:10px; margin-bottom:0px; display:inline-block; width: 100%; height: 100%"></p>
 				<li>Setup a real TurtleBot3 Burger with PC, SBC (Raspberry Pi), and OpenCR control module. Connected
 					PC to Raspberry Pi with its IP address through SSH to bringup TurtleBot3 in ROS2.</li>
 				<li>Configured two BLDC motors with a motor controller for a differential drive robot. Tuned PID
@@ -92,12 +101,17 @@
 					USB.</li>
 				<li>Test the accuracy of wheel odometry. Implemented sensor fusion of wheel odometry and IMU using
 					robot localization ekf in ROS2.</li>
-				<li>Calibrated the camera and used ArUco markers and OpenCV library to estimate camera pose.
-					Developed the automatic docking code and behavior trees, and tested on Turtlebot3 and a
-					differential drive robot in both simulation and real world.</li>
 				<li>Tuned different SLAM (Cartographer and SLAM Toolbox) and Navigation2 parameters in ROS2, and
-					tested teleoperation, SLAM, and autonomous navigation of differential drive robots in different
-					Gazebo world and real world.</li>
+					tested teleoperation, SLAM, and autonomous navigation of differential drive robots in real world.
+				</li>
+				<li>Created some behavior trees for the robot.</li>
+				<p style="text-align:center; margin-bottom:0px;"><img src="images/DifferentialDrive/bt.png" alt=""
+						style="margin-top:10px; margin-bottom:0px; display:inline-block; width: 100%; height: 100%"></p>
+				<li>Calibrated the camera and used ArUco markers and OpenCV libraries to estimate camera pose.
+					Developed behavior trees for navigation and automatic docking, and tested on Turtlebot3 and a
+					differential drive robot in real world.</li>
+				<p style="text-align:center; margin-bottom:0px;"><img src="images/DifferentialDrive/real.gif" alt=""
+						style="margin-top:10px; margin-bottom:0px; display:inline-block; width: 100%; height: 100%"></p>
 				<li>Used Rviz2 and rqt tools to visualize and inspect ROS2 topics, services, actions and nodes.
 					Wrote many ROS2 publishers and subscribers, services and clients, action servers and clients,
 					tf2 broadcasters and listeners in Python and C++.</li>

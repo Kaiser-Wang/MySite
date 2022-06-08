@@ -97,13 +97,18 @@
 					control of steering motors.</li>
 				<li>Developed a serial motor driver in C++ and created a node to subscribe motor command and publish
 					encoder speed in ROS.</li>
-				<li>Developed a CAN bus motor driver in Arduino and used rosserial to communicate with ROS. Used CAN
-					bus analyzer and module for development.</li>
+				<li>Developed a CAN bus motor driver in Arduino based on CAN bus protocol and used rosserial to
+					communicate with ROS. Used CAN bus analyzer and module for development.</li>
 				<li>Developed the hardware interface between motors and ros controller (four wheel steering
 					controller and joint state controller).</li>
+				<p style="text-align:center; margin-bottom:0px;"><img
+						src="images/FourWheelSteering/gazebo_ros_control.png" alt=""
+						style="margin-top:0px; margin-bottom:0px; display:inline-block; width: 100%; height: 100%"></p>
 				<li>Modified four wheel steering controller for three motion modes.</li>
 				<li>Published /cmd_vel ROS topic in terminal to control four wheel steering robots in simulation and
 					in real world.</li>
+				<p style="text-align:center; margin-bottom:0px;"><img src="images/FourWheelSteering/teleop.gif" alt=""
+						style="margin-top:0px; margin-bottom:0px; display:inline-block; width: 100%; height: 100%"></p>
 				<li>Developed and tested teleoperation of four wheel steering robots in ROS with a remote joystick
 					controller.</li>
 				<li>Setup a NVIDIA Jetson and developed ROS in ARM64 architectures environment with the help of SSH
